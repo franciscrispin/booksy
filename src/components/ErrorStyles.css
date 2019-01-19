@@ -1,0 +1,43 @@
+.loading-spinner,
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error {
+  flex-direction: column;
+}
+
+.error__image {
+  width: 25%;
+  min-width: 100px;
+  max-width: 300px;
+  margin-bottom: 32px;
+}
+
+.button--error {
+  background: #ff4242;
+  width: 20%;
+  min-width: 100px;
+  margin-top: 36px;
+}
+
+.button--home {
+  position: relative;
+  background: #ff4242;
+  width: 20%;
+  min-width: 100px;
+  margin-top: 36px;
+  top: -12%;
+}
+
+.error-page {
+  height: 100vh;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

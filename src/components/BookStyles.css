@@ -1,0 +1,176 @@
+/* Mobile */
+/* Book Side Info */
+.book-info-list {
+  list-style: none;
+}
+
+.book-info-item {
+  padding-bottom: 4px;
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.book-info-item__data {
+  font-weight: normal;
+}
+
+/* Book */
+.o-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  width: 100%;
+  margin: 88px auto 0px auto;
+}
+
+.o-book-container__left {
+  flex: 1;
+}
+
+.left__book-image {
+  width: 300px;
+}
+
+.mobile__book-info {
+  display: block;
+  margin-top: 32px;
+}
+
+.left__book-info {
+  display: none;
+  margin: 16px 0 0 32px;
+}
+
+.spacer {
+  display: none;
+  flex: 1;
+}
+
+.o-book-container__right {
+  flex: 6;
+  padding: 0 32px;
+}
+
+.right__title,
+.right__author {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.right__title {
+  margin-top: 32px;
+}
+
+.right__author {
+  /* border-bottom: 1px solid #e6e6e6; */
+  padding-bottom: 16px;
+  font-weight: normal;
+}
+
+.button {
+  color: white;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.button--book {
+  background: #f60;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.right__description,
+.right__subtitle {
+  margin-top: 16px;
+}
+
+.image-loader__preloader {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .o-book-container {
+    width: 70%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .o-book-container {
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 718px;
+    margin: 88px auto 0px auto;
+  }
+  .o-book-container__right {
+    margin-left: 1.5em;
+  }
+
+  .mobile__book-info {
+    display: none;
+  }
+
+  .left__book-info {
+    display: block;
+  }
+
+  .right__title,
+  .right__author {
+    width: auto;
+    text-align: left;
+  }
+
+  .right__author {
+    padding-bottom: 0px;
+  }
+
+  .right__title {
+    margin-top: 0;
+  }
+
+  .button--book {
+    width: 60%;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .spacer {
+    display: block;
+  }
+
+  .o-book-container__right {
+    margin-left: 0;
+  }
+
+  .right__title,
+  .right__author {
+    font-size: 2em;
+  }
+
+  .button--book,
+  .right__subtitle {
+    margin-top: 24px;
+  }
+
+  .button--book {
+    max-width: 300px;
+  }
+}

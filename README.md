@@ -1,2 +1,0 @@
-# booksy
-Created with CodeSandbox

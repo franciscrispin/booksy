@@ -1,0 +1,66 @@
+.home-filter,
+.filter {
+  display: flex;
+  margin-top: 16px;
+}
+
+.filter {
+  padding-bottom: 8px;
+  border-bottom: solid 1px black;
+}
+
+.filter {
+  font-size: 0.9rem;
+}
+
+.home-filter a,
+.filter a {
+  color: black;
+  text-decoration: none;
+}
+
+.home-filter a:hover,
+.home-filter a:active,
+.filter a:hover,
+.filter a:active {
+  color: #fa923f;
+}
+
+.filter__options {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.filter__options ul {
+  display: flex;
+  list-style: none;
+}
+
+.filter__options li {
+  padding: 0 0.5rem;
+}
+
+.home-filter__spacer {
+  flex: 1;
+}
+
+@media (min-width: 420px) {
+  .filter {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 580px) {
+  .home-filter {
+    margin-top: 32px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .filter {
+    margin: 0px auto 0px auto;
+  }
+}

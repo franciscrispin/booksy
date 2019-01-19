@@ -1,0 +1,36 @@
+/* Mobile */
+.o-layout-homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage__logo {
+  flex: 1;
+  margin-top: 25%;
+  margin-bottom: 48px;
+  font-size: 5rem;
+}
+
+.homepage__logo a {
+  color: black;
+  text-decoration: none;
+}
+
+.homepage-inner-wrapper {
+  width: 90%;
+  min-width: 300px;
+}
+
+/* Tablets and Desktop */
+@media (min-width: 680px) {
+  .homepage-inner-wrapper {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homepage__logo {
+    margin-top: 15%;
+  }
+}

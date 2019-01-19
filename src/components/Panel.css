@@ -1,0 +1,16 @@
+/* All */
+.o-panel-wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 56px;
+  z-index: 900;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.panel {
+  width: 80%;
+  min-width: 288px;
+}
