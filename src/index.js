@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { persistStore } from "redux-persist";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBook,
@@ -14,6 +15,7 @@ import Root from "./components/Root";
 import configureStore from "./configureStore";
 
 const store = configureStore();
+const persistor = persistStore(store);
 
 library.add(
   faBook,
@@ -26,4 +28,4 @@ library.add(
 );
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Root store={store} />, rootElement);
+ReactDOM.render(<Root store={store} persistor={persistor} />, rootElement);
