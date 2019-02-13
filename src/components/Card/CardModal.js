@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { addBook, deleteBook, toggleCompleted } from "../actions";
+import { addBook, deleteBook, toggleCompleted } from "../../actions";
 import "./CardStyles.css";
 
 const ModalOption = ({ text, icon, className, onClick, arg }) => {
@@ -44,7 +44,6 @@ class CardModal extends React.Component {
   };
 
   render() {
-    // get props from redux using id
     const { id, page, book, libraryBookList } = this.props;
 
     if (page === "search") {

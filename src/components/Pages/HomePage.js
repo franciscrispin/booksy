@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import CardList from "./CardList";
-import { HomeFilter } from "./Filter";
+import SearchBar from "../SearchBar/SearchBar";
+import CardList from "../Card/CardList";
+import { HomeFilter } from "../Filter/Filter";
 import "./HomePage.css";
 
 const Homepage = () => (

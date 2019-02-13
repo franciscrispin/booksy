@@ -19,9 +19,11 @@ const fetchData = (params, dataType, getData) => async dispatch => {
   }
 };
 
+// create action creators for the searched books
 export const fetchBookList = search =>
   fetchData(search, "BOOKLIST", getBookList);
 
+// create action creators for the individual book selected
 export const fetchBook = id => fetchData(id, "BOOK", getBook);
 
 // actions to add/delete/toggle complete books in library

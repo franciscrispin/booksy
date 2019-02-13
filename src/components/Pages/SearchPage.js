@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import Toolbar from "./Toolbar";
-import Panel from "./Panel";
-import PageData from "./PageData";
-import CardList from "./CardList";
-import { fetchBookList, updateSearchInput } from "../actions";
+import Toolbar from "../Toolbar/Toolbar";
+import Panel from "../Panel/Panel";
+import PageData from "../PageData";
+import CardList from "../Card/CardList";
+import { fetchBookList, updateSearchInput } from "../../actions";
 
 class SearchPage extends React.Component {
   componentDidMount() {
@@ -37,5 +37,3 @@ export default connect(
   mapStateToProps,
   { fetchBookList, updateSearchInput }
 )(SearchPage);
-
-// <Toolbar searchBar="search" />

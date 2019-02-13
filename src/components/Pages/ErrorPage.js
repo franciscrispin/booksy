@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import "./ErrorStyles.css";
+import "../Error/ErrorStyles.css";
 
 const errorPageSrc =
   "https://www.bittbox.com/wp-content/uploads/2008/06/10-37-Intriguing-404-Error-Page-Designs.jpg";

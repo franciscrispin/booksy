@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import HomePage from "./HomePage";
-import SearchPage from "./SearchPage";
-import LibraryPage from "./LibraryPage";
-import BookPage from "./BookPage";
-import ErrorPage from "./ErrorPage";
+import HomePage from "./Pages/HomePage";
+import SearchPage from "./Pages/SearchPage";
+import LibraryPage from "./Pages/LibraryPage";
+import BookPage from "./Pages/BookPage";
+import ErrorPage from "./Pages/ErrorPage";
 import "../styles.css";
 
 const Root = ({ store, persistor }) => (
@@ -37,16 +37,3 @@ const Root = ({ store, persistor }) => (
 );
 
 export default Root;
-
-// import { fakeSearchBookList } from "../api/fakeData";
-
-// const id = "dsz5AwAAQBAJ";
-
-// const updatedBookData = {
-//   ...fakeSearchBookList.find(book => book.id === id),
-//   ...fakeBookData
-// };
-
-// const reducer = (accumulator, currentValue) => ({ ...accumulator, [currentValue.id]: currentValue });
-
-// const books = items.map(processBookData).reduce(reducer, {});

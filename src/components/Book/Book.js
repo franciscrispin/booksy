@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import Parser from "html-react-parser";
 import BookImage from "./BookImage";
 import BookSideInfo from "./BookSideInfo";
-import { addBook, deleteBook, fetchBook } from "../actions";
+import { addBook, deleteBook, fetchBook } from "../../actions";
 import "./BookStyles.css";
 
 class Book extends React.Component {

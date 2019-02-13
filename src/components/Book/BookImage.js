@@ -1,6 +1,6 @@
 import React from "react";
 import ImageLoader from "react-load-image";
-import { loadingSpinnerSrc } from "./LoadingSpinner";
+import { loadingSpinnerSrc } from "../LoadingSpinner";
 import "./BookStyles.css";
 
 const placeholder =
