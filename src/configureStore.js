@@ -8,10 +8,12 @@ import { createLogger } from "redux-logger";
 const configureStore = () => {
   const middlewares = [thunk];
 
+  // show redux logger when in development only
   if (process.env.NODE_ENV !== "production") {
     middlewares.push(createLogger());
   }
 
+  // save the state of the users' reading list in the store
   const persistConfig = {
     key: "root",
     storage: storage

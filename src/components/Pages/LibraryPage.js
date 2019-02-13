@@ -1,8 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import Toolbar from "./Toolbar";
-import Panel from "./Panel";
-import CardList from "./CardList";
+import Toolbar from "../Toolbar/Toolbar";
+import Panel from "../Panel/Panel";
+import CardList from "../Card/CardList";
 
 class LibraryPage extends React.Component {
   componentDidMount() {
@@ -24,5 +24,3 @@ class LibraryPage extends React.Component {
 }
 
 export default withRouter(LibraryPage);
-
-// <Toolbar searchBar="filter" />

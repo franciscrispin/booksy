@@ -1,5 +1,5 @@
 import React from "react";
-import "./ErrorStyles.css";
+import "./Error/ErrorStyles.css";
 
 export const loadingSpinnerSrc =
   "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif";

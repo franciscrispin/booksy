@@ -20,13 +20,6 @@ export const fakeSearchBookList = [
       "http://books.google.com/books/content?id=dsz5AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
     title: "Hooked"
   },
-  // {
-  //   authors: ["Brenda Rothert"],
-  //   id: "TomxCwAAQBAJ",
-  //   thumbnail:
-  //     "http://books.google.com/books/content?id=TomxCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-  //   title: "Hooked"
-  // },
   {
     authors: ["Joe S. McIlhaney, Jr.", "Freda McKissic Bush"],
     id: "yW43Ik719a8C",

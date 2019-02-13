@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar/SearchBar";
 import "./Toolbar.css";
 
 const Toolbar = () => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       <div>
-        <NavLink to="/search" className="toolbar__logo">
+        <NavLink to="/home" className="toolbar__logo">
           Booksy
         </NavLink>
       </div>
@@ -37,7 +37,5 @@ const Toolbar = () => (
     </nav>
   </header>
 );
-
-// <SearchBar className="searchbar--desktop" searchBar={searchBar} />
 
 export default Toolbar;

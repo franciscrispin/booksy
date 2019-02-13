@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import LoadingSpinner from "./LoadingSpinner";
-import ErrorMessage from "./ErrorMessage";
+import ErrorMessage from "./Error/ErrorMessage";
 
 let PageData = ({ children, ...props }) => {
   const { errorMessage, isFetching } = props;

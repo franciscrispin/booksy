@@ -1,6 +1,6 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import { VisibilityFilter } from "./Filter";
+import SearchBar from "../SearchBar/SearchBar";
+import { VisibilityFilter } from "../Filter/Filter";
 import "./Panel.css";
 
 const Panel = ({ page }) => (

@@ -1,6 +1,9 @@
 import { combineReducers } from "redux";
 
+// create the reducer for the list of searched books and any individual books selected
 const createReducer = TYPE => {
+  // initialize the searched book list as an array
+  // initialize the individual book as null
   const initState = TYPE === "BOOKLIST" ? [] : null;
 
   const books = (state = initState, action) => {
@@ -43,6 +46,7 @@ const createReducer = TYPE => {
   });
 };
 
+// reducer for the list of books added by the user
 const libraryBookList = (state = [], action) => {
   switch (action.type) {
     case "ADD_BOOK":
@@ -58,6 +62,7 @@ const libraryBookList = (state = [], action) => {
   }
 };
 
+// reducer to track the current search input of the user
 const searchInput = (state = null, action) => {
   switch (action.type) {
     case "UPDATE_SEARCH_INPUT":

@@ -1,7 +1,7 @@
 const url = "https://www.googleapis.com/books/v1/volumes";
 const apikey = "AIzaSyD38ahdrLnc57t_XTUp0aiYmR9rqwlJqr8";
 
-// Fetch book data
+// Fetch search results
 export const getBookList = async search => {
   const urlToFetch = `${url}?q=${search}&printType=books&key=${apikey}`;
   const response = await fetch(urlToFetch);
@@ -17,6 +17,7 @@ export const getBookList = async search => {
   }
 };
 
+// Fetch individual book selected
 export const getBook = async id => {
   const urlToFetch = `${url}/${id}?key=${apikey}`;
   const response = await fetch(urlToFetch);
@@ -33,7 +34,7 @@ export const getBook = async id => {
   }
 };
 
-// Process book data
+// Process book data for search results fetched
 const processBookData = book => ({
   id: book.id,
   title: book.volumeInfo.title ? book.volumeInfo.title : "Untitled",
@@ -43,6 +44,7 @@ const processBookData = book => ({
   thumbnail: processThumbnail(book.volumeInfo.imageLinks)
 });
 
+// Process extra book data for selected book fetched
 const processExtraBookData = book => {
   return {
     ...processBookData(book),
@@ -61,6 +63,7 @@ const processExtraBookData = book => {
 const defaultImage =
   "https://www.colburnschool.edu/wp-content/uploads/2018/02/pix-vertical-placeholder.jpg";
 
+// fetch thumbnails if they exist, if not return the default image
 const processThumbnail = imageLinks => {
   let url;
   if (!imageLinks) {
@@ -74,6 +77,7 @@ const processThumbnail = imageLinks => {
   } else {
     return defaultImage;
   }
+  // change http to https request
   url = "https" + url.slice(4);
   return url;
 };

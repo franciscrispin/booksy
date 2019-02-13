@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import Toolbar from "./Toolbar";
-import PageData from "./PageData";
-import Book from "./Book";
-import { fetchBook } from "../actions";
+import Toolbar from "../Toolbar/Toolbar";
+import PageData from "../PageData";
+import Book from "../Book/Book";
+import { fetchBook } from "../../actions";
 
 class BookPage extends React.Component {
   componentDidMount() {
