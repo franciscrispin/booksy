@@ -24,5 +24,3 @@ class LibraryPage extends React.Component {
 }
 
 export default withRouter(LibraryPage);
-
-// <Toolbar searchBar="filter" />

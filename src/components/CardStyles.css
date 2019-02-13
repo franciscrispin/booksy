@@ -52,12 +52,13 @@
   margin: 0 16px;
 }
 
-.card__text p {
+/* doesn't work accross brosers */
+/* .card__text p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-}
+} */
 
 .card__text__title {
   font-size: 1.5rem;

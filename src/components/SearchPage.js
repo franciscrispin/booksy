@@ -37,5 +37,3 @@ export default connect(
   mapStateToProps,
   { fetchBookList, updateSearchInput }
 )(SearchPage);
-
-// <Toolbar searchBar="search" />

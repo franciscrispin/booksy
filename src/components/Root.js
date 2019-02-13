@@ -37,16 +37,3 @@ const Root = ({ store, persistor }) => (
 );
 
 export default Root;
-
-// import { fakeSearchBookList } from "../api/fakeData";
-
-// const id = "dsz5AwAAQBAJ";
-
-// const updatedBookData = {
-//   ...fakeSearchBookList.find(book => book.id === id),
-//   ...fakeBookData
-// };
-
-// const reducer = (accumulator, currentValue) => ({ ...accumulator, [currentValue.id]: currentValue });
-
-// const books = items.map(processBookData).reduce(reducer, {});

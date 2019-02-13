@@ -80,3 +80,9 @@
     border-radius: 16px;
   }
 }
+
+@media (min-width: 1024px) {
+  .searchbar__input {
+    font-size: 1em;
+  }
+}

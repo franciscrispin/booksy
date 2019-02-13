@@ -44,7 +44,6 @@ class CardModal extends React.Component {
   };
 
   render() {
-    // get props from redux using id
     const { id, page, book, libraryBookList } = this.props;
 
     if (page === "search") {
