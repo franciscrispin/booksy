@@ -22,7 +22,7 @@ I wanted to create a simple application where users could search for books, add 
 
 To start off, I sketched out a simple 4-page application and planned the features I wanted to include in the application. I used `create-react-app` so I could focus my effort on developing the application and minimize setup time.
 
-After planning, I started with laying out and styling the components. I took inspiration from [Google](https://www.google.com/) and [Penguin Books](https://www.penguin.co.uk/). Next, I set-up the routes using `react-router` and managed the application state using `redux`. Finally, I used `redux-persist` to save the users' list of saved books into the application state as an alternative to setting up a backend.
+After planning, I started by laying out and styling the components. I took inspiration from [Google](https://www.google.com/) and [Penguin Books](https://www.penguin.co.uk/). Next, I set-up the routes using `react-router` and managed the application state using `redux`. Finally, I used `redux-persist` to save the users' list of saved books into the application state as an alternative to setting up a backend.
 
 One feature I planned was to have the books matching the search term to display as the user is typing. However, that would mean a whole lot of GET request sent to the Google Books server which would exceed my daily limit.
 
