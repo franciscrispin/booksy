@@ -33,7 +33,6 @@ class SearchBar extends React.Component {
   };
 
   render() {
-    // const { className, searchBar } = this.props;
     const { className } = this.props;
 
     return (
@@ -42,7 +41,6 @@ class SearchBar extends React.Component {
           type="text"
           className="searchbar__input"
           placeholder="Search books"
-          // placeholder={`${sentenceCase(searchBar)} books`}
           onChange={this.handleChange}
           onKeyPress={this.handleKeyPress}
         />
@@ -62,10 +60,3 @@ export default withRouter(
     { fetchBookList, updateSearchInput }
   )(SearchBar)
 );
-
-// const sentenceCase = text => {
-//   return text ? text.charAt(0).toUpperCase() + text.slice(1) : "";
-// };
-
-// <div className={`button__icon--${searchBar}`}>
-// <Svg searchBar={searchBar} />

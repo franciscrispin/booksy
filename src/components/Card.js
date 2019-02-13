@@ -3,6 +3,11 @@ import { connect } from "react-redux";
 import CardModal from "./CardModal";
 import "./CardStyles.css";
 
+const truncate = text => {
+  const maxLen = 40;
+  return text.length > maxLen ? text.slice(0, maxLen) + "..." : text;
+};
+
 const Card = ({ libraryBookList, page, ...props }) => {
   const book = { ...props };
   const { id, title, authors, thumbnail } = props;
@@ -18,8 +23,8 @@ const Card = ({ libraryBookList, page, ...props }) => {
     <div className={`card ${className}`}>
       <CardModal id={id} page={page} book={book} />
       <div className="card__text">
-        <p className="card__text__title">{title}</p>
-        <p className="card__text__author">{authors}</p>
+        <p className="card__text__title">{truncate(title)}</p>
+        <p className="card__text__author">{truncate(authors)}</p>
       </div>
       <div className="card__poster">
         <img className="card__poster__img" src={thumbnail} />
