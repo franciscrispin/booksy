@@ -9,10 +9,8 @@ Visit the application [here](https://booksy.netlify.com/home).
 ## Project Screen Shots
 
 ![Search](https://duaw26jehqd4r.cloudfront.net/items/351044013f0G1y2v0W33/Image%202019-02-13%20at%206.34.48%20PM.png)
-
-![Library](https://duaw26jehqd4r.cloudfront.net/items/3L1I3j2P1V1S1N1Q2i1C/Image%202019-02-13%20at%206.35.44%20PM.png)
-
-![Book](https://duaw26jehqd4r.cloudfront.net/items/3j2C0Q1x3B3d0T2D2E29/Image%202019-02-13%20at%206.37.25%20PM.png)
+![Book](https://duaw26jehqd4r.cloudfront.net/items/0E0Z3L3j3n0w3E2J2Z1d/Image%202019-02-15%20at%2010.56.10%20AM.png)
+![Web](https://duaw26jehqd4r.cloudfront.net/items/2b3r2N0a3d33221T3U0f/Image%202019-02-15%20at%2010.55.14%20AM.png)
 
 ## Reflection  
 
