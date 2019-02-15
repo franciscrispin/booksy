@@ -18,7 +18,7 @@ The primary goal of this project was to practice using React, Redux and React Ro
 
 I wanted to create a simple application where users could search for books, add them to a library and be able to check them off like a to-do list. 
 
-To start off, I sketched how the application should look on mobile and desktop, and planned the features I wanted to include in the application. I used CodeSa so I could focus my effort on developing the application and minimize setup time.
+To start off, I sketched how the application should look on mobile and desktop, and planned the features I wanted to include in the application. I used CodeSandbox so I could focus my effort on developing the application and minimize setup time.
 
 After planning, I started by laying out and styling the components. I took inspiration from [Google](https://www.google.com/) and [Penguin Books](https://www.penguin.co.uk/). Next, I set-up the routes using `react-router` and managed the application state using `redux`. Finally, I used `redux-persist` to save the users' list of saved books into the application state as an alternative to setting up a backend.
 
