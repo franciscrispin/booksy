@@ -1,5 +1,7 @@
 ## Booksy
 
+*Completed on 19 Jan, 2019*
+
 An application used to search for books and add them to a users' personal library. 
 
 The application was built with React and Redux and is hosted on netlify. Book data is accessed from the [Google Books API](https://developers.google.com/books/).
